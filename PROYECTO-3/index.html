@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            text-align: center;
+            box-shadow: 3px 5px 10px rgb(162, 162, 162);
+            padding: 10px;
+        }
+
+        .container li {
+            list-style: none;
+        }
+
+        .container ul li button {
+            padding: 5px 10px;
+        }
+
+        .screen {
+            display: flex;  
+            justify-content: center;
+        }
+
+        .screen input {
+            width: 300px;
+            padding: 10px 10px;
+        }
+
+        .screen button {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <form class="screen">
+            <input type="text" name="to-do" id="to-do-input" placeholder="Enter your task here">
+            <button id="agregar-btn">Agregar</button>
+        </form>
+        <ul class="container-list">
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

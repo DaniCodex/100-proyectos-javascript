@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+}
+
+.container #carrito-logo {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.products-to-buy {
+    right: 35px;
+    top: 0px;
+    position: absolute;
+    width: 400px;
+    background-color: rgb(225, 229, 229);
+    z-index: 99;
+    min-height: 100px;
+    display: none;
+}
+
+.products-to-buy.active {
+    display: block;
+}
+
+.products-to-buy .card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: thin gray solid;
+}
+
+.products-to-buy .card img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.container-productos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-productos .card {
+    width: 300px;
+    box-shadow: 1px 5px 10px rgb(137, 136, 136);
+}
+
+.container-productos .card img {
+    width: 100%;
+}
+
+.container-productos .descripcion {
+    padding: 10px;
+}
+
+.container-productos .btn-agregar {
+    width: 100%;
+    background-color: rgb(73, 181, 216);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}

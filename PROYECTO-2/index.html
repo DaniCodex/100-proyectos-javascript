@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador con Javascript</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #screen {
+            font-size: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span id="screen">0</span>
+        <div class="elements">
+            <button class="disminuir btn" data-btn="disminuir">Disminuir</button>
+            <button class="resetear btn" data-btn="resetear">Resetear</button>
+            <button class="aumentar btn" data-btn="aumentar">Aumentar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
